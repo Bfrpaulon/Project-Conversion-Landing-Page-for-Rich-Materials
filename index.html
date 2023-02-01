@@ -5,144 +5,55 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css" />
-    <!-- Adicione estes links no cabeçalho da sua página HTML -->
+    <link rel="stylesheet" href="/styles/main.css" />
+    <!-- Add these links in the header of your HTML page -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
         integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous" />
 
-    <!-- Adicione este código na sua folha de estilo -->
+    <!-- Add this code to your stylesheet -->
     <style>
-        header {
-            background-color: #f2f2f2;
-            padding: 1rem;
-            text-align: center;
-        }
-
-        header h1 {
-            font-size: 2rem;
-            margin-bottom: 0;
-        }
-
-        main {
-            padding: 2rem;
-        }
-
-        #intro {
-            text-align: center;
-        }
-
-        #intro h2 {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-        }
-
-        #intro img {
-            margin-bottom: 2rem;
-        }
-
-        #form {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            padding: 2rem 0;
-        }
-
-        #form h2 {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-        }
-
-        #form form {
-            background-color: #f2f2f2;
-            padding: 2rem;
-            border-radius: 1rem;
-        }
-
-        #form i.fa-envelope,
-        #form i.fa-user {
-            width: 1.5rem;
-            text-align: center;
-            margin-right: 1rem;
-            color: #333;
-        }
-
-        #form input[type="text"],
-        #form input[type="email"] {
-            width: 100%;
-            padding: 0.5rem;
-            margin-bottom: 1rem;
-            font-size: 1.2rem;
-        }
-
-        #form button[type="submit"] {
-            width: 100%;
-            padding: 1rem;
-            background-color: #333;
-            color: #fff;
-            border: none;
-            border-radius: 1rem;
-            font-size: 1.2rem;
-            cursor: pointer;
-        }
-
-        footer {
-            background-color: #f2f2f2;
-            padding: 1rem;
-        }
-            #form button[type="submit"]:hover {
-                background-color: #fff;
-                color: #333;
-            }
-
-            footer p {
-                font-size: 1.2rem;
-                text-align: center;
-                margin: 0;
-            }
+       
     </style>
 
-    <!-- Adicione este código no corpo da sua página HTML -->
+    <!-- Add this code in the body of your HTML page -->
     <header>
-        <h1>Baixe nosso Ebook Gratuito</h1>
+        <h1>Download our Free Ebook</h1>
     </header>
 
     <main>
         <section id="intro">
-            <h2>
-                Aprenda as Melhores Técnicas para Criar uma Landing Page de Conversão
-            </h2>
-            <img src="https://t4.ftcdn.net/jpg/05/00/37/89/360_F_500378915_urNT1IJrnyjmgyBDVNwANoiswKNqlAz1.jpg" alt="Ebook" />
+            <h2>Learn the Best Techniques to Create a Conversion Landing Page</h2>
+            <img src="https://t4.ftcdn.net/jpg/05/00/37/89/360_F_500378915_urNT1IJrnyjmgyBDVNwANoiswKNqlAz1.jpg"
+                alt="Ebook" />
             <p>
-                Nosso Ebook Gratuito é perfeito para iniciantes e profissionais
-                avançados de marketing digital. Basta preencher o formulário abaixo
-                para baixar agora!
+                Our Free Ebook is perfect for beginners and professionals alike
+                advanced digital marketing. Just fill out the form below to download
+                now!
             </p>
         </section>
 
         <section id="form">
-            <h2>Receba o Ebook Gratuito Agora</h2>
+            <h2>Get Free Ebook Now</h2>
             <form>
                 <div class="form-group">
-                    <label for="name"><i class="fas fa-user"></i> Nome</label>
+                    <label for="name"><i class="fas fa-user"></i>Name</label>
                     <input type="text" class="form-control" id="name" required />
                 </div>
                 <div class="form-group">
-                    <label for="email"><i class="fas fa-envelope"></i> Email</label>
+                    <label for="email"><i class="fas fa-envelope"></i>Email</label>
                     <input type="email" class="form-control" id="email" required />
                 </div>
-                <button type="submit" class="btn btn-primary">
-                    Baixar Ebook Gratuito
+                <button id="download-ebook-button" type="submit" class="btn btn-primary" href="/ebook.pdf">
                 </button>
             </form>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2023 Ebook Gratuito</p>
+        <p>&copy; 2023 Free Ebook developed by Bruno Paulon</p>
     </footer>
 </head>
-
+<script src="/script/main.js"></script>
 </html>
