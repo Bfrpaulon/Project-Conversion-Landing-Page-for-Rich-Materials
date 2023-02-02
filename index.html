@@ -11,10 +11,9 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
         integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous" />
-
     <!-- Add this code to your stylesheet -->
     <style>
-       
+
     </style>
 
     <!-- Add this code in the body of your HTML page -->
@@ -36,7 +35,7 @@
 
         <section id="form">
             <h2>Get Free Ebook Now</h2>
-            <form>
+            <form id="form-body">
                 <div class="form-group">
                     <label for="name"><i class="fas fa-user"></i>Name</label>
                     <input type="text" class="form-control" id="name" required />
@@ -45,7 +44,8 @@
                     <label for="email"><i class="fas fa-envelope"></i>Email</label>
                     <input type="email" class="form-control" id="email" required />
                 </div>
-                <button id="download-ebook-button" type="submit" class="btn btn-primary" href="/ebook.pdf">
+                <button type="submit" class="btn-success" id="download-button" disabled>
+                   Download
                 </button>
             </form>
         </section>
@@ -56,4 +56,5 @@
     </footer>
 </head>
 <script src="/script/main.js"></script>
+
 </html>
